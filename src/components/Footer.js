@@ -56,17 +56,17 @@ const Footer = () => {
       </p>
       <div className="share">
         <a
-          href="https://www.linkedin.com/in/jigar-sable"
+          href="https://www.linkedin.com/in/moustapha-el-outmani"
           className="fab fa-linkedin"
           target="_blank"
         />
         <a
-          href="https://github.com/jigar-sable"
+          href="https://github.com/moustaphaout"
           className="fab fa-github"
           target="_blank"
         />
         <a
-          href="mailto:jigarsable21@gmail.com"
+          href="mailto:moustapha.eloutmani@gmail.com"
           className="fas fa-envelope"
           target="_blank"
         />
