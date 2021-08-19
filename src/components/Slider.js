@@ -43,7 +43,7 @@ const Slider = () => {
             <li>
               <a
                 className="twitter"
-                href="https://twitter.com/jigar_sab"
+                href="https://twitter.com/"
                 target="_blank"
               >
                 <i className="fab fa-twitter" />
@@ -66,7 +66,7 @@ const Slider = () => {
             <li>
               <a
                 className="dev"
-                href="https://dev.to/jigarsable"
+                href="https://dev.to/"
                 target="_blank"
               >
                 <i className="fab fa-dev" />
