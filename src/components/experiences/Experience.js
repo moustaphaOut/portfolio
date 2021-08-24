@@ -55,7 +55,7 @@ const Experience = ({ dataParentToChild }) => {
             <i className="fas fa-briefcase" /> Experience
           </h2>
           <div className="timeline">
-            {EXPERIENCES.map((experience) => {
+            {EXPERIENCES.slice(0, 6).map((experience) => {
               left = !left;
               return (
                 <ExperienceCard
@@ -76,6 +76,9 @@ const Experience = ({ dataParentToChild }) => {
         </section>
       ) : (
         <section className="experience" id="experience">
+          <div style={{marginBottom: "1%"}}>
+
+</div>
           <h2 className="heading">
             <i className="fas fa-briefcase" /> Experience
           </h2>
@@ -85,6 +88,9 @@ const Experience = ({ dataParentToChild }) => {
               something you need to know to move forward.
             </span>
           </div>
+          <br/>
+          <br/>
+
           <div className="timeline">
             {EXPERIENCES.map((experience) => {
               left = !left;

@@ -15,12 +15,12 @@ const Home = () => {
   return (
     <Provider history={useHistory()}>
       <Slider />
-      <About />
-      <Periodic />
-      <Education />
-      <Work dataParentToChild = {"home"}/>
       <Experience dataParentToChild = {"home"}/>
-      <Contact />
+      <Work dataParentToChild = {"home"}/>
+      <Periodic dataParentToChild = {"home"} />
+      <Education dataParentToChild = {"home"} />
+      <About />
+      {/* <Contact /> */}
     </Provider>
   );
 };

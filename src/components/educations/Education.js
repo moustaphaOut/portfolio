@@ -39,7 +39,7 @@ const Education = () => {
               />
             </div>
             <div className="content">
-              <h3>Bachelor of Physics</h3>
+              <h3>Baccalaureate of Physics</h3>
               <p>
                 Baccalaureate in Physics at Ar'rissala institution of Nador,
                 Morocco | Ar'rissala

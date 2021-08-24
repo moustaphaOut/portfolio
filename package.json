@@ -15,6 +15,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "redux-thunk": "^2.3.0",
+    "smoke-effect-react": "^1.0.5",
     "tsparticles": "^1.33.3",
     "web-vitals": "^1.0.1"
   },

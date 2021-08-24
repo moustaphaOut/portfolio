@@ -10,7 +10,8 @@ const PROJECTS = [
     description:
       "Personal portfolio website. Don't need much info about it, just scroll down. You're here only!",
     isPrivate: false,
-    githubLink: "https://github.com/moustaphaOut/Portfolio-Website",
+    githubLink: "https://github.com/moustaphaOut/Portfolio",
+    view: "",
   },
   {
     title: "Words Battle Game",
@@ -19,6 +20,7 @@ const PROJECTS = [
     cover: "Words-Battle.jpeg",
     isPrivate: true,
     githubLink: "",
+    view: "",
   },
   {
     title: "PSD automatizations script",
@@ -27,6 +29,7 @@ const PROJECTS = [
     cover: "script.jpg",
     isPrivate: false,
     githubLink: "",
+    view: "",
   },
   {
     title: "BetterMe App",
@@ -35,6 +38,7 @@ const PROJECTS = [
     cover: "maintenance.jpg",
     isPrivate: true,
     githubLink: "",
+    view: "",
   },
   {
     title: "Internationalization script",
@@ -43,6 +47,7 @@ const PROJECTS = [
     cover: "script.jpg",
     isPrivate: false,
     githubLink: "",
+    view: "",
   },
   {
     title: "Cinema Management",
@@ -51,6 +56,7 @@ const PROJECTS = [
     cover: "cinema.JPG",
     isPrivate: false,
     githubLink: "",
+    view: "",
   },
   {
     title: "PHP E-commerce",
@@ -59,6 +65,7 @@ const PROJECTS = [
     cover: "PHP-SHOP.png",
     isPrivate: false,
     githubLink: "electrojoud",
+    view: "",
   },
 
   {
@@ -68,6 +75,7 @@ const PROJECTS = [
     cover: "maintenance.jpg",
     isPrivate: false,
     githubLink: "",
+    view: "",
   },
   {
     title: "NXP Car",
@@ -76,6 +84,7 @@ const PROJECTS = [
     cover: "NXP-CUP.JPG",
     isPrivate: true,
     githubLink: "",
+    view: "",
   },
   {
     title: "Back-end Ecommerce shop",
@@ -83,6 +92,7 @@ const PROJECTS = [
     cover: "symfony-4.png",
     isPrivate: false,
     githubLink: "BackEndShop-API",
+    view: "",
   },
   {
     title: "RFID",
@@ -91,6 +101,7 @@ const PROJECTS = [
     cover: "RFID.JPG",
     isPrivate: false,
     githubLink: "",
+    view: "",
   },
   {
     title: "E-learning",
@@ -99,6 +110,7 @@ const PROJECTS = [
     cover: "myCourse.JPG",
     isPrivate: false,
     githubLink: "myCourse",
+    view: "",
   },
   {
     title: "Others projects (+8)",
@@ -107,6 +119,7 @@ const PROJECTS = [
     cover: "cmsoon.png",
     isPrivate: false,
     githubLink: "",
+    view: "",
   },
 ];
 
@@ -127,6 +140,7 @@ const Work = ({ dataParentToChild }) => {
                   cover={project.cover}
                   isPrivate={project.isPrivate}
                   githubLink={project.githubLink}
+                  view={project.view}
                 />
               );
             })}
@@ -140,6 +154,7 @@ const Work = ({ dataParentToChild }) => {
         </section>
       ) : (
         <section className="work" id="work">
+          <div style={{ marginBottom: "5%" }}></div>
           <h2 className="heading">
             <i className="fas fa-laptop-code" /> Projects <span>Made</span>
           </h2>
@@ -155,12 +170,12 @@ const Work = ({ dataParentToChild }) => {
                 />
               );
             })}
-          </div>{" "}
+          </div>
           <div className="backbtn">
-            <a href="/#work" className="btn">
+            <Link to="/" className="btn">
               <i className="fas fa-arrow-left" />
               <span>Back to Home</span>
-            </a>
+            </Link>
           </div>
         </section>
       )}

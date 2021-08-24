@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Education from "./components/educations/Education";
+import NotFound from "./components/NotFound";
 import Experiences from "./components/pages/Experiences";
 import Home from "./components/pages/Home";
 import SkillsPage from "./components/pages/SkillsPage";
@@ -21,6 +22,7 @@ const Routes = () => {
         <Route path="/Works" exact component={Works} />;
         <Route path="/experiences" exact component={Experiences} />;
         <Route path="/Contact" exact component={Contact} />;
+        <Route  exact component={NotFound} />;
       </Switch>
     </BrowserRouter>
   );

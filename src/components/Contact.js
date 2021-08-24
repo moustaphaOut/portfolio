@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 
 const Contact = () => {
+  const [copySuccess, setCopySuccess] = useState(
+    "moustapha.eloutmani@gmail.com"
+  );
+  const textAreaRef = useRef(null);
+
+  function copyToClipboard(e) {
+    textAreaRef.current.select();
+    document.execCommand("copy");
+    // This is just personal preference.
+    // I prefer to not show the whole text area selected.
+    e.target.focus();
+    setCopySuccess("Email Copied!");
+  }
   return (
     <section className="contact" id="contact">
       <h2 className="heading">
         <i className="fas fa-headset" /> Get in <span>Touch</span>
       </h2>
-      <div className="container">
+      {/*
         <div className="content">
           <div className="image-box">
             <img draggable="false" src="./assests/images/contact1.png" alt="" />
@@ -45,7 +58,25 @@ const Contact = () => {
             </div>
           </form>
         </div>
+      </div> */}
+      <div>
+        <br />
+
+        <div className="button-area">
+          <button title="Click to Copy" onClick={copyToClipboard}>
+            {copySuccess}
+            <i className="fa fa-paper-plane" />
+          </button>
+        </div>
+        <br />
+
+        <input
+          style={{ backgroundColor: "#e5ecfb", color: "#e5ecfb" }}
+          ref={textAreaRef}
+          value="moustapha.eloutmani@gmail.com"
+        />
       </div>
+      
     </section>
   );
 };

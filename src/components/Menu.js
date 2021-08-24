@@ -7,16 +7,7 @@ const Menu = () => {
   return (
     <header>
     <a href="/Portfolio-Website" className="logo">
-    <Container>
-      <Navbar.Brand href="#home">
-        <img
-          alt=""
-          src="/assests/images/logo.png"
-          width="250"
-          className="d-inline-block align-top"
-        />{' '}
-      </Navbar.Brand>
-    </Container>
+    <i class="far fa-smile"></i> You Look Amazing
     </a>
     <div id="menu" className="fas fa-bars" />
     <nav className="navbar">
@@ -27,23 +18,23 @@ const Menu = () => {
           </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <a href="#about">About</a>
         </li>
         <li>
-          <Link to="/Skills">Skills</Link>
+          <Link to="/skills">Skills</Link>
         </li>
         <li>
-          <Link to="/educations">Education</Link>
+          <a href="#education">Education</a>
         </li>
         <li>
-          <Link to="/works">Work</Link>
+          <a href="#work">Work</a>
         </li>
         <li>
-          <Link to="/experiences">Experience</Link>
+          <a href="#experience">Experience</a>
         </li>
-        <li>
+        {/* <li>
           <Link to="/contact">Contact</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   </header>

@@ -15,7 +15,7 @@ const ProjectCard = (props) => {
         <div className="desc">
           <p>{props.description}</p>
           <div className="btns">
-            <a href="#" className="btn" target="_blank">
+            <a href={`${props.view}`} className="btn" target="_blank">
               <i className="fas fa-eye" /> View
             </a>
             <a
